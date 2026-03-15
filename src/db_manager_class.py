@@ -59,7 +59,7 @@ class DBManager:
         return result
 
     def get_vacancies_with_higher_salary(self) -> list[list]:
-        """Получение списка вакансий, у которых зарплата выше средней по всем вакансиям"""
+        """Получение списка вакансий, у которых зарплата выше средней"""
 
         self.conn = psycopg2.connect(dbname=self.dbname, **self.params)
         with self.conn.cursor() as cur:

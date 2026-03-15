@@ -7,7 +7,7 @@ from config import config_params
 
 
 def api_vacansy() -> list[dict]:
-    """Функция получения списка вакансий"""
+    """Функция получения списка вакансий из API"""
 
     url_requests = "https://api.hh.ru/vacancies"
     params_requests = {
